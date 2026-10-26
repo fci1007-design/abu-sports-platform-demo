@@ -1,0 +1,204 @@
+{
+  "preparedAt": "2026-10-26T08:28:59.608Z",
+  "scope": "website source, fictional demo data, optimized images, tests and release documentation only",
+  "excluded": [
+    "meeting records",
+    "internal project plans",
+    "local screenshots and logs",
+    "original artwork",
+    "credentials",
+    "parent Git history"
+  ],
+  "files": [
+    {
+      "path": "assets/baseball.webp",
+      "bytes": 142454,
+      "sha256": "50ccbfb298c2ac47ebafd642d05d1fb2a1c5c7ec5a19a7c1eac9e2560d4ce6bd"
+    },
+    {
+      "path": "assets/basketball.webp",
+      "bytes": 203338,
+      "sha256": "808321b98cde682350f6be976e55d8ad130deb1596a9e8c78e93da0a0fce3427"
+    },
+    {
+      "path": "assets/sports-banner.webp",
+      "bytes": 262338,
+      "sha256": "6a188d3204bfdfb212b1926df03a9efafe36063915673bd8590eecdb3487211a"
+    },
+    {
+      "path": "assets/sports-supply.webp",
+      "bytes": 141134,
+      "sha256": "3e8b0126a0d59872060084a722106df0000421afd9b2d076af45d716791f323a"
+    },
+    {
+      "path": "assets/stadium.webp",
+      "bytes": 269894,
+      "sha256": "615c5c988488d73d5a874f338f6eeb799aa73086f46c8590fa02ed3197bcca72"
+    },
+    {
+      "path": "design-preview/design.css",
+      "bytes": 20455,
+      "sha256": "b50802ac984fbf5791194a1975dbe187a0917df719fcc572d62b4bc601d32160"
+    },
+    {
+      "path": "design-preview/design.js",
+      "bytes": 12574,
+      "sha256": "b06a49c149dec3b6d877cc3e8e3316976e0089bc7bc9e43bba23f0e4a2dc48ed"
+    },
+    {
+      "path": "design-preview/index.html",
+      "bytes": 3055,
+      "sha256": "e2c359458a481696d776084954335e5eec72093c1a8e9fb1d35e69969fad2eb9"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1260,
+      "sha256": "ad4090e4718ac283444b459293b96ece3da6c9b578c89efea44857a20bf65796"
+    },
+    {
+      "path": "package.json",
+      "bytes": 294,
+      "sha256": "8b9a54f45a9525a7a6aea938143e74fa1ac36615f75ad7e5b851933190fc4dd1"
+    },
+    {
+      "path": "scripts/build-articles.mjs",
+      "bytes": 4349,
+      "sha256": "552717392cb5c1db9cd417ca150a158164392bff278078d9002ed0d3a394f60c"
+    },
+    {
+      "path": "scripts/build-design-preview.mjs",
+      "bytes": 1998,
+      "sha256": "e083a7134aa55c0d8f4d5c878da0f4bf099a36c3d85a92bcb0cf40dff58e979e"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 2041,
+      "sha256": "c34294b2a974992670713e0f7f27e6324c799a5a6ea2ddc827ae7ddf2b1d3e08"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1610,
+      "sha256": "785fb19559aed7c790f78987cac6197417ebd12329bbf79c9f3e6c1c0c43d929"
+    },
+    {
+      "path": "sports-theme.css",
+      "bytes": 43908,
+      "sha256": "a55cc3e9f3866c7eb6553f8015a60915232cb54578a112b6aff443e954e0e33f"
+    },
+    {
+      "path": "src/ads.js",
+      "bytes": 3893,
+      "sha256": "dd25987ed4ef443dc55b3ecf2c855c63a61d55358e27de72eddbbcdb013256b5"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 68008,
+      "sha256": "40d17d09325cef786982036b99f473148c582c650a4f844caf072bae74769f75"
+    },
+    {
+      "path": "src/catalog.js",
+      "bytes": 206,
+      "sha256": "0b293747420a8f5c1c0c42aebac44cc12fce9aca00adfa96a29a379018a866e3"
+    },
+    {
+      "path": "src/content.js",
+      "bytes": 4805,
+      "sha256": "f4c6a5f0b3c1fb72ee07cd2501b9e7926d90cec0a2620d1fb6adcac46e05a281"
+    },
+    {
+      "path": "src/core.js",
+      "bytes": 3347,
+      "sha256": "ae90cad370cf96915806f1c59670a56902ef0962e1f4b4f75c2e637d37de54f5"
+    },
+    {
+      "path": "src/data.js",
+      "bytes": 10984,
+      "sha256": "217c765e5cba7cfc7b279ef898eb980ed4b1a8f38d289fb1e99ca725b41f9c95"
+    },
+    {
+      "path": "src/editorial.js",
+      "bytes": 10195,
+      "sha256": "627e5e2a1007a753da91405e52c7be286129f9d5797b870fcd4ac179fef62ee3"
+    },
+    {
+      "path": "src/expert-tools.js",
+      "bytes": 6227,
+      "sha256": "32556a66b4421e7822bbd29db0c813e1c174ea045a0b5b56fe484c6a8e590310"
+    },
+    {
+      "path": "src/workspace-controller.js",
+      "bytes": 7400,
+      "sha256": "c53b2196186e882b858a05aa50e59f0d4cb9e69954c6a7eb820ebabf2dd476c0"
+    },
+    {
+      "path": "src/workspace-core.js",
+      "bytes": 9141,
+      "sha256": "53b9ea4ece9c2c5b76eefe111158733051bf37f79862ec7bc82ab94a26ac48b9"
+    },
+    {
+      "path": "src/workspace-data.js",
+      "bytes": 3643,
+      "sha256": "44fd75e092ba4231a12fba1b24ca401c20defff51bf55d66cd756285c85f3ac5"
+    },
+    {
+      "path": "src/workspace-ui.js",
+      "bytes": 17232,
+      "sha256": "a8fbc9fc84a9e147fe6aa78bdad411991787311a67c37c87d31fc71eaa3ad9fd"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 69249,
+      "sha256": "ad422204c41a12e21cc5bc69aa560e184482d0775dabecf45c0eefa1e785e283"
+    },
+    {
+      "path": "tests/content.test.mjs",
+      "bytes": 1444,
+      "sha256": "99f347b8ae01f2b58c0dd7e3dd210a610e1bc55de5d464d54513603a30c45368"
+    },
+    {
+      "path": "tests/core.test.mjs",
+      "bytes": 2618,
+      "sha256": "782be1f1637f878cd4b10d14c3445c3a0602b199b771aadc9dc59a5060bf38c2"
+    },
+    {
+      "path": "tests/editorial.test.mjs",
+      "bytes": 3355,
+      "sha256": "063417a7b50255db70c873a88cb1f2b86119b656db7c1a0adde64b92f0970d7e"
+    },
+    {
+      "path": "tests/workspace.test.mjs",
+      "bytes": 6358,
+      "sha256": "0e0c892106879cd9b013fe1d5e44cfc8df4a9867f58d108ab569eff413a5ba28"
+    },
+    {
+      "path": "啟動示範網站.command",
+      "bytes": 263,
+      "sha256": "a4886b69b9f7cc97bac2b6a12bdcc966202eb57a1247d5eb81b6aa8ed36330cf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2419,
+      "sha256": "2f7843772dd742b38faa23d9b2ce8c01be37dca21fea3bbb1460811e82846fb9"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 963,
+      "sha256": "0af353d89878162f34d7303f6a537eded4a0c8026d7f38f0b212dc2279533e94"
+    },
+    {
+      "path": "DEPLOY.md",
+      "bytes": 535,
+      "sha256": "f5fb7d8bf0273f7ac7a1d55550ba7300cc871b86dc754169834d0119ee1000b2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 128,
+      "sha256": "82c5e27ef3351bf7b28f9d9f46bfede56959eb0f410a8cb7c59b33614f2449bd"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1356,
+      "sha256": "451ba7fd5a27451f594dd7a841907316b467df8f3beb9888cf63d8433952c941"
+    }
+  ]
+}

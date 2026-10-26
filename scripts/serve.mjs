@@ -1,0 +1,12 @@
+import http from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {spawn} from 'node:child_process';
+const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.webp':'image/webp','.png':'image/png','.json':'application/json; charset=utf-8'};
+let port=Number(process.env.COURTSIDE_PORT||4173);
+const server=http.createServer(async(req,res)=>{try{const u=new URL(req.url,'http://localhost');let relative=decodeURIComponent(u.pathname);if(relative==='/')relative='/index.html';const file=path.resolve(root,'.'+relative);if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end('Forbidden');return;}const body=await readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(body);}catch{res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});res.end('Not found');}});
+server.on('error',err=>{if(err.code==='EADDRINUSE'&&port<4190){port++;server.listen(port,'127.0.0.1');}else{console.error(err.message);process.exit(1);}});
+server.on('listening',()=>{const url=`http://127.0.0.1:${port}`;console.log(`Local: ${url}`);if(process.argv.includes('--open'))spawn(process.platform==='darwin'?'open':process.platform==='win32'?'cmd':'xdg-open',process.platform==='win32'?['/c','start','',url]:[url],{stdio:'ignore'}).on('error',()=>{});});
+server.listen(port,'127.0.0.1');

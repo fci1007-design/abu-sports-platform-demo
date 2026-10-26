@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="球場邊首頁設計比較：以相同的分析、教學與討論內容，比較兩種首頁編排。">
+  <title>球場邊｜首頁版型比較</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="../sports-theme.css">
+</head>
+<body class="sports-theme" data-original="../index.html">
+  <a class="skip-link" href="#content">跳到內容</a>
+  <div class="preview-bar">
+    <div class="wide preview-inner">
+      <span class="preview-label">首頁版型比較</span>
+      <div class="view-switch" role="group" aria-label="切換首頁版型">
+        <button type="button" data-view="editorial" aria-pressed="true">A 專欄與討論</button>
+        <button type="button" data-view="matchday" aria-pressed="false">B 跟著賽事</button>
+      </div>
+      <a class="original-link" data-app="/">完整互動版</a>
+      <button type="button" class="ad-plan-trigger" data-ad-action="plan">廣告版位</button>
+    </div>
+  </div>
+  <header class="site-header wide">
+    <div class="masthead">
+      <a class="wordmark" href="?view=editorial" aria-label="球場邊首頁"><span class="ball-mark" aria-hidden="true">◉</span>球場邊<span class="brand-period" aria-hidden="true">.</span></a>
+      <p class="brand-description">盤口分析、教學、一起聊球</p>
+      <a class="member-link" data-app="/me">我的帳號</a>
+    </div>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="?view=editorial" aria-current="page">首頁</a>
+      <button type="button" data-scroll="columns">專欄文章</button>
+      <a data-app="/matches">賽事中心</a>
+      <button type="button" data-scroll="conversation">討論區</button>
+      <a data-app="/experts">專家廣場</a>
+      <a data-app="/tools">專家工具</a>
+      <a data-app="/learn">新手學堂</a>
+    </nav>
+  </header>
+  <div class="wide" id="ad-banner-root"></div>
+  <section class="scores-section" aria-label="今日示範賽程">
+    <div class="wide score-wrap"><div class="score-date"><strong>10.26</strong><span>今日賽程</span></div><div class="scores" id="scores"></div></div>
+  </section>
+  <main id="content" class="wide" tabindex="-1"></main>
+  <footer class="site-footer wide">
+    <strong>球場邊<span class="brand-period">.</span></strong>
+    <p>賽事、分析、教學與人物介紹均為示範內容，阿布拉實際觀點待本人確認。圖片為 AI 情境圖。</p>
+    <a data-app="/">前往完整互動版</a>
+  </footer>
+  <dialog id="reader" aria-labelledby="reader-title">
+    <div class="reader-tools"><span id="reader-kind">公開專欄</span><button class="close-reader" type="button" aria-label="關閉閱讀">關閉 <span aria-hidden="true">×</span></button></div>
+    <div id="reader-content"></div>
+  </dialog>
+  <script type="module" src="design.js"></script>
+</body>
+</html>

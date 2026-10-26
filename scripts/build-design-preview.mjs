@@ -1,0 +1,18 @@
+import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const preview=path.join(root,'design-preview');
+const html=await readFile(path.join(preview,'index.html'),'utf8');
+const css=(await readFile(path.join(preview,'design.css'),'utf8'))+'\n'+(await readFile(path.join(root,'sports-theme.css'),'utf8'));
+let js='';
+for(const file of ['src/data.js','src/catalog.js','src/workspace-data.js','src/workspace-core.js','src/core.js','src/ads.js','src/content.js','src/editorial.js','src/expert-tools.js','design-preview/design.js'])js+=(await readFile(path.join(root,file),'utf8')).replace(/^import .*;\s*$/gm,'').replace(/^export /gm,'')+'\n';
+const images={};
+for(const name of ['baseball','basketball','stadium','sports-banner','sports-supply'])images[`assets/${name}.webp`]=`data:image/webp;base64,${(await readFile(path.join(root,'assets',name+'.webp'))).toString('base64')}`;
+const inline=`window.__previewAssets=${JSON.stringify(images)};\n(()=>{\n${js}\n})();`;
+const standalone=html.replace('<link rel="stylesheet" href="../sports-theme.css">','').replace('data-original="../index.html"','data-original="球場邊示範網站.html"').replace('<link rel="stylesheet" href="design.css">',()=>`<style>${css}</style>`).replace('<script type="module" src="design.js"></script>',()=>`<script>${inline.replace(/<\/script/gi,'<\\/script')}</script>`);
+await writeFile(path.join(root,'首頁版型比較.html'),standalone);
+await mkdir(path.join(root,'dist'),{recursive:true});
+await cp(preview,path.join(root,'dist','design-preview'),{recursive:true});
+await writeFile(path.join(root,'dist','首頁版型比較.html'),standalone.replace('data-original="球場邊示範網站.html"','data-original="index.html"'));
+console.log(`Design comparison: ${path.join(root,'首頁版型比較.html')} (${(Buffer.byteLength(standalone)/1024/1024).toFixed(2)} MiB)`);
