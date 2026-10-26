@@ -1,5 +1,5 @@
 {
-  "preparedAt": "2026-10-26T14:24:32.654Z",
+  "preparedAt": "2026-10-26T14:35:06.141676+00:00",
   "scope": "website source, fictional demo data, optimized images, tests and release documentation only",
   "excluded": [
     "meeting records",
@@ -202,8 +202,8 @@
     },
     {
       "path": "DEPLOY.md",
-      "bytes": 2050,
-      "sha256": "3283f19df3cd22c97f5a499e0fd9c13d8bc2e7294ad9005869bbd2b1c6d262c6"
+      "bytes": 3022,
+      "sha256": "edac9e2a7508914a37b5b4ba4a879f4b2718b2931bc2ff7e247cf86897362138"
     },
     {
       "path": ".gitignore",
