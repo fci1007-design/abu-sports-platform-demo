@@ -5,6 +5,7 @@
 - [開啟線上示範](https://fci1007-design.github.io/abu-sports-platform-demo/)
 - [公開專欄](https://fci1007-design.github.io/abu-sports-platform-demo/#/columns)
 - [賠率分析高手](https://fci1007-design.github.io/abu-sports-platform-demo/#/tool/odds)
+- [責任博彩專區](https://fci1007-design.github.io/abu-sports-platform-demo/#/responsible-gaming)
 - [發布紀錄](DEPLOY.md)
 
 ## 示範內容
@@ -14,6 +15,10 @@
 所有賽事、報價、文章、會員、服務關係與互動均為虛構示範。除阿布拉名稱外，其他專家為示範角色；樣本介紹與文章不代表真人實際發表。圖片為 AI 情境圖。工具只是市場估計的介面展示，並非阿布拉的獨門演算法，不提供真實下注指令或獲利保證。
 
 示範身分與內容解鎖保存在此瀏覽器，沒有正式帳號、付費防護、真實會員、多人同步、LINE 移轉、金流或原生 App。兩種訂閱情境尚未定案，不會收費。
+
+## 責任博彩宣導
+
+六篇公開文章涵蓋收入界線、預算與時間、追損、生活警訊、未成年人保護及暫停求助；附台灣彩券、台灣運彩、WHO／NHS 與法規資料來源及查核日期。專區不提供付費／廣告促銷、診斷或問卷分數，不收集投注／財務／健康資料，也沒有受理自我排除。建置另輸出可直接閱讀的靜態專區。
 
 ## 執行與建置
 

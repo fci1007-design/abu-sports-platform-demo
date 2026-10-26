@@ -1,5 +1,5 @@
 {
-  "preparedAt": "2026-10-26T08:36:54.132Z",
+  "preparedAt": "2026-10-26T14:24:32.654Z",
   "scope": "website source, fictional demo data, optimized images, tests and release documentation only",
   "excluded": [
     "meeting records",
@@ -47,8 +47,8 @@
     },
     {
       "path": "design-preview/index.html",
-      "bytes": 3055,
-      "sha256": "e2c359458a481696d776084954335e5eec72093c1a8e9fb1d35e69969fad2eb9"
+      "bytes": 3110,
+      "sha256": "579b98e5a19f9fe42fa631011fda469fca09987d60ad30c970a736b0e7f53ce7"
     },
     {
       "path": "index.html",
@@ -62,8 +62,8 @@
     },
     {
       "path": "scripts/build-articles.mjs",
-      "bytes": 4349,
-      "sha256": "552717392cb5c1db9cd417ca150a158164392bff278078d9002ed0d3a394f60c"
+      "bytes": 4412,
+      "sha256": "776bf32bd40b5ea6d05ce78f7182a5365b601252ad9eea22e6a8a8ee80cc6617"
     },
     {
       "path": "scripts/build-design-preview.mjs",
@@ -71,9 +71,14 @@
       "sha256": "e083a7134aa55c0d8f4d5c878da0f4bf099a36c3d85a92bcb0cf40dff58e979e"
     },
     {
+      "path": "scripts/build-responsible-gaming.mjs",
+      "bytes": 2391,
+      "sha256": "51650b4f3b3ba6ad48299af06a9130fa8fcf236ec0e7b5abb1a425b62bc1762f"
+    },
+    {
       "path": "scripts/build.mjs",
-      "bytes": 2041,
-      "sha256": "c34294b2a974992670713e0f7f27e6324c799a5a6ea2ddc827ae7ddf2b1d3e08"
+      "bytes": 2225,
+      "sha256": "dfd42e601649ec61fa879372d08c82755f8bf6efd1268dd9f92ac011b471c1bb"
     },
     {
       "path": "scripts/serve.mjs",
@@ -82,8 +87,8 @@
     },
     {
       "path": "sports-theme.css",
-      "bytes": 43908,
-      "sha256": "a55cc3e9f3866c7eb6553f8015a60915232cb54578a112b6aff443e954e0e33f"
+      "bytes": 51178,
+      "sha256": "cb1cf15b6d62433400832b70693ed3535ec4f9492a2f7e50c8ed5a4d413d138f"
     },
     {
       "path": "src/ads.js",
@@ -92,8 +97,8 @@
     },
     {
       "path": "src/app.js",
-      "bytes": 68008,
-      "sha256": "40d17d09325cef786982036b99f473148c582c650a4f844caf072bae74769f75"
+      "bytes": 69412,
+      "sha256": "a611269c982293f16da0c6296c377000220af2e46fc9e39a8a3bda020bc10661"
     },
     {
       "path": "src/catalog.js",
@@ -124,6 +129,11 @@
       "path": "src/expert-tools.js",
       "bytes": 6227,
       "sha256": "32556a66b4421e7822bbd29db0c813e1c174ea045a0b5b56fe484c6a8e590310"
+    },
+    {
+      "path": "src/responsible-gaming.js",
+      "bytes": 13776,
+      "sha256": "43578d05998cf11e2a1e7918d52503998a22a0f8b9a6feb7a00ef125630ec1d2"
     },
     {
       "path": "src/workspace-controller.js",
@@ -166,6 +176,11 @@
       "sha256": "063417a7b50255db70c873a88cb1f2b86119b656db7c1a0adde64b92f0970d7e"
     },
     {
+      "path": "tests/responsible-gaming.test.mjs",
+      "bytes": 1791,
+      "sha256": "c3bb966e4e48d4d1fc4b6e5a5c7e3f1185d3b70e8674184482fd334f89974be8"
+    },
+    {
       "path": "tests/workspace.test.mjs",
       "bytes": 6358,
       "sha256": "0e0c892106879cd9b013fe1d5e44cfc8df4a9867f58d108ab569eff413a5ba28"
@@ -177,18 +192,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 2419,
-      "sha256": "2f7843772dd742b38faa23d9b2ce8c01be37dca21fea3bbb1460811e82846fb9"
+      "bytes": 2929,
+      "sha256": "0a9615e91bf57ebc864b0d9b04f1be18272965d2ec6d299155df7249be29d5f5"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 963,
-      "sha256": "0af353d89878162f34d7303f6a537eded4a0c8026d7f38f0b212dc2279533e94"
+      "bytes": 1188,
+      "sha256": "6da1b687a94478ebd08afcc64dc45c66583aa339aba0bbb5207a170b253478de"
     },
     {
       "path": "DEPLOY.md",
-      "bytes": 1760,
-      "sha256": "b8ef03b4c0a5913a45f392c2169780eb1efec7fb01f501e28227c42e11def883"
+      "bytes": 2050,
+      "sha256": "3283f19df3cd22c97f5a499e0fd9c13d8bc2e7294ad9005869bbd2b1c6d262c6"
     },
     {
       "path": ".gitignore",

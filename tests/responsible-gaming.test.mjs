@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {RG_ARTICLES,RG_SOURCES,findResponsibleArticle,filterResponsibleArticles,renderResponsibleHub,renderResponsibleArticle} from '../src/responsible-gaming.js';
+import {responsibleStaticDocument} from '../scripts/build-responsible-gaming.mjs';
+
+test('六篇宣導文章有唯一識別、完整段落與可追溯 HTTPS 來源',()=>{assert.equal(RG_ARTICLES.length,6);assert.equal(new Set(RG_ARTICLES.map(a=>a.id)).size,6);for(const a of RG_ARTICLES){assert.ok(a.sections.length>=3);assert.ok(a.sources.length>=2);for(const key of a.sources)assert.equal(new URL(RG_SOURCES[key].url).protocol,'https:');}});
+test('分類與全文搜尋可組合，找不到文章不冒用其他內容',()=>{assert.ok(filterResponsibleArticles({query:'借貸'}).length>0);assert.equal(filterResponsibleArticles({category:'保護與求助'}).length,2);assert.equal(filterResponsibleArticles({query:'無此關鍵字'}).length,0);assert.equal(findResponsibleArticle('missing'),null);assert.match(renderResponsibleArticle('missing'),/找不到這篇/);assert.match(renderResponsibleHub({query:'"><script>bad</script>'}),/&lt;script&gt;/);});
+test('宣導閱讀公開、沒有付費／廣告／資料蒐集表單，靜態頁原生連結可用',()=>{const a=RG_ARTICLES[0],html=renderResponsibleArticle(a.id);assert.ok(!html.includes('data-action="subscribe"'));assert.ok(!html.includes('class="ad-'));assert.ok(!html.includes('<form'));assert.ok(html.includes('tel:0800366176'));const staticHtml=responsibleStaticDocument(a);assert.ok(staticHtml.includes('noindex,nofollow'));assert.ok(!staticHtml.includes('<script'));assert.ok(staticHtml.includes('../index.html'));assert.ok(!responsibleStaticDocument().includes('id="rg-search-form"'));});
